@@ -34,7 +34,7 @@ jobs:
       # Build appointment-service image
       - name: Build appointment-service image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/appointment-service:latest ./application
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/appointment-service:latest ./application-service
 
       # Build order-service image
       - name: Build order-service image
